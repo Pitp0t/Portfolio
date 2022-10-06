@@ -1,0 +1,118 @@
+
+
+:root{
+    --main-color: #ec7a2f;
+    --secondary-color: black;
+    --text-color:black
+
+}
+
+
+
+.hero-about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap:100px;
+    margin: 10vh auto;
+    width: clamp(100px , 90%, 1500px);
+    
+}
+
+
+.img{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    content: url("/imagenesGaleria/mona1.png");
+    animation:glitch 2s infinite;
+    animation-delay: 1s;
+   
+}
+
+
+.hobbies{
+    margin: 2em  0 1em 0;
+    
+}
+
+.aside h2{
+    margin-bottom: .5em;
+}
+
+
+
+.btn-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.btn-about{
+    z-index: 100;
+    font-weight: 800;
+    font-size: .8em;
+    margin-right: .8em;
+    padding:  .8em 1.2em;
+    background:none;
+    border-radius: .5em;
+    border:2px solid black;
+    
+
+}
+
+
+@keyframes glitch {
+    0%{
+        content: url("/imagenesGaleria/mona1.jpg")
+    }
+
+    70%{
+        content:url("/imagenesGaleria/mona1.jpg")
+    }
+
+    80%{
+        content:url("/imagenesGaleria/mona3.jpg")
+
+    }
+    90%{
+        content:url("/imagenesGaleria/mona4.jpg")
+
+    }
+    100%{
+        content:url("/imagenesGaleria/mona1.jpg")
+
+    }
+}
+
+
+
+@media only screen and (max-width: 1200px)  {
+    .hero-about{
+        flex-direction: column;
+        gap:20px;
+    }
+    .aside, h2{
+        text-align: center;
+
+    }
+    .img{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px){
+    .btn-container{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .btn-about{
+        margin-top: 1em;
+        width: 90%;
+    }
+
+}
