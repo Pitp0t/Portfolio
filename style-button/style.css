@@ -49,7 +49,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2em auto 4em auto;
+  margin: 4em auto 4em auto;
   width: 70%;
 }
 
@@ -72,12 +72,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 400px;
+  width: 280px;
+  height: 280px;
 }
 .containerhero .imgHero {
-  width: 300px;
-  height: 300px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   background-position: left;
   -o-object-fit: cover;
@@ -85,22 +85,12 @@ body {
   margin: auto;
 }
 .containerhero .imgHeroSvg {
-  -webkit-animation: rotation 10s linear infinite;
-          animation: rotation 10s linear infinite;
+  animation: rotation 10s linear infinite;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 400px;
-  height: 400px;
-}
-
-@-webkit-keyframes rotation {
-  from {
-    transform: translateX(-50%) rotate(0deg);
-  }
-  to {
-    transform: translateX(-50%) rotate(360deg);
-  }
+  width: 280px;
+  height: 280px;
 }
 
 @keyframes rotation {
@@ -209,7 +199,6 @@ body {
 .circulos {
   z-index: 10000;
   position: relative;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
@@ -224,8 +213,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 130px;
-  height: 130px;
+  width: 110px;
+  height: 110px;
   border-radius: 5.5em;
   box-shadow: 2.4px 0px 27.9px rgba(0, 0, 0, 0.04);
   gap: 10px;
@@ -242,8 +231,8 @@ body {
   font-size: 0.9em;
 }
 .circulos .circulo svg {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .heightCircle {
@@ -292,9 +281,8 @@ body {
 @media only screen and (max-width: 800px) {
   .hero {
     width: 100%;
-    margin-top: 0;
+    margin-top: 4em;
     margin-bottom: 5em;
-    padding: 0.3em 2em;
   }
   .titulo-p {
     margin: 1em 0;
@@ -314,7 +302,7 @@ body {
     font-size: 1.1em;
   }
   .titulo {
-    font-size: 3em;
+    font-size: 2em;
     margin: 0.8em -0.5em 0em -0.5em;
   }
 }

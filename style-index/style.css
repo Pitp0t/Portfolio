@@ -1,8 +1,9 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 s :root {
   --main-color: #ec7a2f;
   --secondary-color: black;
-  --text-color:black ;
+  --text-color: black;
 }
 
 /* SCROLLBAR */
@@ -21,6 +22,8 @@ body::-webkit-scrollbar-thumb {
 body {
   overflow-x: hidden;
   padding-bottom: 5em;
+  margin: 0 3em 0em 3em;
+  position: relative;
 }
 
 * {
@@ -29,25 +32,25 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  margin: 0 3em 1em 3em;
-  position: relative;
+* a:-moz-any-link {
+  color: black;
+}
+* a:any-link {
+  color: black;
+}
+* a:-webkit-any-link {
+  color: black;
 }
 
 .footer-h3 {
-  z-index: -100;
-  padding: 3em 0em;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  margin: auto;
+  margin-top: 6em;
 }
-.footer-h3 h3 {
-  text-align: center;
-  font-size: 0.9em;
-  font-weight: 300;
+.footer-h3 .footerIcons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 .header {
@@ -57,7 +60,6 @@ body {
   border-radius: 0em 0em 1em 1em;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -107,7 +109,8 @@ body {
 .titulos {
   margin-top: 5em;
 }
-.titulos p, .titulos h2 {
+.titulos p,
+.titulos h2 {
   font-size: 1.5em;
   text-align: center;
 }
@@ -164,6 +167,7 @@ body {
 
 .wrapper-galery {
   margin-top: 2em;
+  margin-bottom: 6em;
   display: grid;
   grid-template-columns: repeat(auto-fill, 1fr);
   grid-template-rows: auto;
@@ -330,7 +334,7 @@ body {
 
 .twree .left {
   height: 550px;
-  background-image: url("../imagenesGaleria/work2.jpg");
+  background-image: url("../imagenesGaleria/work3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: 90px;
@@ -338,7 +342,7 @@ body {
 
 .one .left {
   height: 550px;
-  background-image: url("../imagenesGaleria/windlvoers.jpg");
+  background-image: url("../imagenesGaleria/arca.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: 0;
@@ -346,7 +350,7 @@ body {
 
 .arca .left {
   height: 550px;
-  background-image: url("../imagenesGaleria/arca.jpg");
+  background-image: url("../imagenesGaleria/windlvoers.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: -100px;
@@ -358,6 +362,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: -10px;
+}
+
+.rediseño .left {
+  background-image: url("../imagenesGaleria/work4.jpg");
 }
 
 .pelotas {
@@ -398,7 +406,11 @@ body {
 }
 
 @media only screen and (max-width: 690px) {
-  .twree .left, .one .left, .arca .left, .industrial .left, .react .left {
+  .twree .left,
+  .one .left,
+  .arca .left,
+  .industrial .left,
+  .react .left {
     height: 280px;
     background-position-x: 0;
     background-size: cover;
@@ -407,14 +419,12 @@ body {
     margin: 0;
     border-radius: 1em;
   }
-
   .arrow {
     align-items: center;
   }
   .arrow .desarrollo {
     text-align: center;
   }
-
   .pelotas {
     opacity: 0.1;
   }
@@ -434,46 +444,38 @@ body {
   .pelotas .pelota2:hover {
     transform: scale(1.1);
   }
-
   .header {
     padding: 0.5em 1em;
   }
-
   .render1 {
     margin-top: 5em;
     margin-left: 2.5em;
   }
-
   .render2 {
     display: none;
   }
-
   .works {
     flex-direction: column;
     margin: 7em 1em;
   }
-  .works .right h2, .works .right p, .works .right h3 {
+  .works .right h2,
+  .works .right p,
+  .works .right h3 {
     text-align: center;
   }
   .works .right .techused {
     text-align: center;
   }
-
-  body {
-    margin: 0em 0.5em;
-  }
-
-  .aside, h2 {
+  .aside,
+  h2 {
     text-align: center;
   }
-
   .show {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
   }
-
   nav ul {
     flex-direction: column;
     display: none;
@@ -481,17 +483,14 @@ body {
     font-size: 1.2em;
     margin-top: 1em;
   }
-
   .ham {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .hamburguer {
     display: block;
   }
-
   .wrapper-galery {
     grid-template-areas: "img2" "img2" "img1" "img3" "img4" "img5" "img6" "img7";
   }
@@ -546,29 +545,30 @@ body {
 }
 
 @media only screen and (min-width: 690px) and (max-width: 1150px) {
-  .twree .left, .one .arca .left, .industrial .left {
+  .twree .left,
+  .one .arca .left,
+  .industrial .left {
     background-position-x: 0;
     border-radius: 0 3em 3em 0;
   }
-
   .arrow {
     align-items: center;
   }
   .arrow .desarrollo {
     text-align: center;
   }
-
   .works {
     flex-direction: column;
     margin: 7em 1em;
   }
-  .works .right h2, .works .right p, .works .right h3 {
+  .works .right h2,
+  .works .right p,
+  .works .right h3 {
     text-align: center;
   }
   .works .right .techused {
     text-align: center;
   }
-
   .wrapper-galery {
     grid-template-areas: "img1 img3 " "img5 img6 " "img2 img4" "img2 img7";
   }
@@ -580,11 +580,9 @@ body {
   .wrapper-galery .img2 {
     height: 810px;
   }
-
   h2 a {
     font-size: 1.8em;
   }
-
   .works .left {
     height: 850px;
   }
@@ -597,19 +595,20 @@ body {
   .floating .svg_container:hover {
     transform: scale(1.68) !important;
   }
-
   .nav .logo a {
     font-size: 1.3em;
   }
   .nav ul li a {
     font-size: 1.2em;
   }
-
   .header {
     padding: 2em 2em;
   }
-
   * {
     font-size: 102%;
   }
+}
+.prototipo {
+  margin-top: -1.5em;
+  margin-bottom: 1em;
 }/*# sourceMappingURL=style.css.map */

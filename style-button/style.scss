@@ -51,17 +51,9 @@ body::-webkit-scrollbar-track {
 /* SCROLLBAR */
 /* SCROLLBAR */
 
-
-
-
 body{
     overflow-x: hidden;
-    
 }
-
-
-
-
 .hero{
     z-index: -1;    
     display: flex;
@@ -70,14 +62,9 @@ body{
     justify-content: center;
     
     
-    margin: 2em auto 4em auto;
+    margin: 4em auto 4em auto;
     width:70%;
 }
-
-
-
-
-
 .titulo{
     margin-top: .4em;
     text-align: center;
@@ -87,26 +74,21 @@ body{
     
 }
 .titulo-p{
-    
     margin:2em 0;
     text-align: center;
     font-size: 1em;
     font-weight: 300;
-    
-    
-
 }
-
 .containerhero{
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 400px;
-    height: 400px;
+    width: 280px;
+    height: 280px;
     .imgHero{
-        width: 300px;
-        height: 300px;
+        width: 220px;
+        height:  220px;
         border-radius: 50%;
         background-position: left;
         object-fit: cover;
@@ -117,8 +99,8 @@ body{
         position: absolute;
         left: calc(50%);
         transform: translateX(-50%);
-        width: 400px;
-        height: 400px;
+        width: 280px;
+        height: 280px;
       
     }
 }
@@ -132,7 +114,6 @@ body{
     }
 }
 
-
 .hero__btn--container{
     z-index: 10000;
     position: relative;
@@ -142,12 +123,6 @@ body{
     padding: 20px 0;
 
 }
-
-
-
-
-
-
 
 .hero__btn--wrapper{
     position: absolute;
@@ -161,36 +136,27 @@ body{
 
 
 .hero__btn{
-   
     text-decoration: none;
     color: black;
-   
     position: absolute;
     left: calc(50% - 60px);
     bottom: calc(100vh - 20px);
     width: 120px;
     height: 45px;
     transition:all .7s;
-
     span{
         font-size: inherit;
         border: 2px solid black;
         padding: .5em 1.5em;
         border-radius: .2em;
         visibility: visible;
-        
-
     }
-
     span:hover{
         background-color:black;
         color:white;
         font-weight: 700;
         transition: all .7s;
     }
-
-   
-
     svg {
         width: 0;
         height: 0;
@@ -198,24 +164,18 @@ body{
         transition: all .7s;
 
     }
-    
-    
 }
 
 
 .svg_container{
-    
     box-shadow:2.4px 0px 27.9px rgba(0, 0, 0, 0.04);
     width: 0;
     height: 0;
     transition: all .7s;
-    
 }
-
 
 .tecnologias{
     margin-bottom: 5em;
-    
 }
 
 .tecnologias h2{
@@ -224,7 +184,6 @@ body{
     text-align: center;
     margin-bottom: 1.5em;
 }
-
 
 // =============================
 //CLASE AÑADIDA CON JS ONSCROLL
@@ -306,8 +265,8 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 130px;
-        height: 130px;
+        width: 110px;
+        height: 110px;
         
         border-radius: 5.5em;
         box-shadow:2.4px 0px 27.9px rgba(0, 0, 0, 0.04);
@@ -336,8 +295,8 @@ body{
         
         svg{
             
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
         }
 
              
@@ -413,35 +372,27 @@ body{
 
 
 @media only screen and (max-width: 800px) {
-    
-    
     .hero{
         width: 100%;
-        margin-top: 0;
+        margin-top: 4em;
         margin-bottom:5em;
-        padding: .3em 2em;
+       
     }
     
-   
+
     .titulo-p{
         margin: 1em 0;
     }
-
-   
     li{
-        
         a{
-            
             color:white
         }
         a:hover{
             color: white;
-        
         }
     }
 
     ul{
-        
         padding: .5em 1em .5em 1.5em;
         border-bottom-left-radius: .4em;
         border-top-left-radius: .4em;
@@ -451,7 +402,7 @@ body{
         font-size: 1.1em;
     }
     .titulo{
-        font-size: 3em;
+        font-size: 2em;
         margin: .8em -.5em 0em -.5em;
     }
 }
